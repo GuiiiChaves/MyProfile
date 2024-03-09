@@ -38,4 +38,12 @@
   $contact->add_message( $_POST['message'], 'Message', 10);
 
   echo $contact->send();
+
+  $contact->smtp = array(
+    'host' => 'https://guilhermeprofile.netlify.app/',
+    'username' => 'GuiChaves',
+    'password' => 'pass',
+    'port' => '587'
+  );
 ?>
+
